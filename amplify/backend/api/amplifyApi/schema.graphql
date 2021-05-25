@@ -1,0 +1,13 @@
+
+type Facility @model {
+  id: ID!
+  name: String!
+  numberOfPeople: Int!
+  description: String
+  recordingStatus: RecordingStatus
+}
+
+enum RecordingStatus {
+  ACTIVE
+  INACTIVE
+}
